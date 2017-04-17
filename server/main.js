@@ -9,6 +9,8 @@ import bodyParser from 'body-parser'; // PARSE HTML BODY
 
 import session from 'express-session';
 
+import api from './routes';
+
 const app = express();
 const port = 3000;
 const devPort = 4000;
@@ -24,6 +26,9 @@ app.use(session({
 }));
 
 app.use('/', express.static(path.join(__dirname, './../public')));
+
+/* setup routers & static directory */
+app.use('/api', api);
 
 app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, './../public/index.html'));

@@ -1,0 +1,8 @@
+//  DRAW
+export const DRAW_POST = "DRAW_POST";
+export const DRAW_POST_SUCCESS = "DRAW_POST_SUCCESS";
+export const DRAW_POST_FAILURE = "DRAW_POST_FAILURE";
+
+export const DRAW_LIST = "DRAW_LIST";
+export const DRAW_LIST_SUCCESS = "DRAW_LIST_SUCCESS";
+export const DRAW_LIST_FAILURE = "DRAW_LIST_FAILURE";
